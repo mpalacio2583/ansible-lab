@@ -21,8 +21,10 @@
   template:
     src: templates/deploy_azure_resource.tf.j2
     dest: /tmp/deploy_azure_resource.tf
-    owner: awx
-    group: awx
+#    owner: awx
+#    group: awx
+    owner: rhel
+    group: rhel
     mode: '0644'
 
 - name: Deploy Azure Resource
