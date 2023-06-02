@@ -23,8 +23,8 @@
     dest: /tmp/deploy_azure_resource.tf
 #    owner: awx
 #    group: awx
-    owner: student
-    group: student
+    owner: root
+    group: root
     mode: '0644'
 
 - name: Deploy Azure Resource
