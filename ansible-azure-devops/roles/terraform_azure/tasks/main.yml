@@ -21,10 +21,10 @@
   template:
     src: templates/deploy_azure_resource.tf.j2
     dest: /tmp/deploy_azure_resource.tf
-    owner: awx
-    group: awx
-#    owner: root
-#    group: root
+#    owner: awx
+#    group: awx
+    owner: student
+    group: student
     mode: '0644'
 
 - name: Deploy Azure Resource
