@@ -46,3 +46,4 @@ arm_subscription_id: "{{lookup('env', 'AZURE_SUBSCRIPTION_ID')}}"
 arm_client_id: "{{lookup('env', 'AZURE_CLIENT_ID')}}"
 arm_client_secret: "{{lookup('env', 'AZURE_SECRET')}}"
 arm_tenant_id: "{{lookup('env', 'AZURE_TENANT')}}"
+ansible_user_public_key: 'ansible_key'
