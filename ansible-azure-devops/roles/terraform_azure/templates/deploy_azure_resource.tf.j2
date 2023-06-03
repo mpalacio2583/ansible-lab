@@ -149,8 +149,8 @@ resource "azurerm_linux_virtual_machine" "terraformvm" {
     disable_password_authentication = true
         
     admin_ssh_key {
-        username   = "azureuser"
-        public_key = tls_private_key.Ssh.public_key_openssh
+        admin_username   = "azureuser"
+        admin_password  =  "PasswordRedhat-123!"
 #        username       = "{{ terraform_vm_admin_user }}"
 #        public_key     = "{{ ansible_user_public_key }}"
     }
