@@ -134,7 +134,7 @@ resource "azurerm_linux_virtual_machine" "terraformvm" {
     size                  = "{{ terraform_vm_size }}"
     computer_name  = "{{ vm_hostname }}"
     admin_username = "{{ terraform_vm_admin_user }}"
-    admin_password = "PasswordRedhat-123!"
+    admin_password = "{{ terraform_vm_admin_Pass }}"
     disable_password_authentication = false
 
     os_disk {
