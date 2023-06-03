@@ -146,14 +146,13 @@ resource "azurerm_linux_virtual_machine" "terraformvm" {
 
     computer_name  = "{{ vm_hostname }}"
     admin_username = "{{ terraform_vm_admin_user }}"
-    disable_password_authentication = true
+    admin_password = "PasswordRedhat-123!"
+#    disable_password_authentication = true
         
-    admin_ssh_key {
-        admin_username   = "azureuser"
-        admin_password  =  "PasswordRedhat-123!"
+#    admin_ssh_key {
 #        username       = "{{ terraform_vm_admin_user }}"
 #        public_key     = "{{ ansible_user_public_key }}"
-    }
+#    }
 
     boot_diagnostics {
         storage_account_uri = azurerm_storage_account.terraformstorageaccount.primary_blob_endpoint
