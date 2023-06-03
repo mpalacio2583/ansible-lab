@@ -42,3 +42,7 @@ azure_ansible_vm_ip_config_name: 'ansible_azure_demo_ip_config'
 azure_ansible_vm_name: 'azure-ansible-test-vm'
 azure_ansible_vm_nic_name: 'ansible_azure_demo_vm_nic'
 azure_ansible_vm_size: 'Standard_DS1_v2'
+arm_subscription_id: "{{lookup('env', 'AZURE_SUBSCRIPTION_ID')}}"
+arm_client_id: "{{lookup('env', 'AZURE_CLIENT_ID')}}"
+arm_client_secret: "{{lookup('env', 'AZURE_SECRET')}}"
+arm_tenant_id: "{{lookup('env', 'AZURE_TENANT')}}"
