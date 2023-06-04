@@ -74,7 +74,7 @@
 
 - name: Add port 8080 to Security Group for Web access to Tomcat
   azure_rm_securitygroup:
-    resource_group: "{{ azure_terraform_resource_group }}"
+    resource_group: "{{ resource_group }}"
     name: "{{ azure_terraform_security_group }}"
     rules:
       - name: AllowTomcat
@@ -92,7 +92,7 @@
 
 - name: Add port 8080 to Security Group for Web access to Tomcat
   azure_rm_securitygroup:
-    resource_group: "{{ azure_ansible_resource_group }}"
+    resource_group: "{{ resource_group }}"
     name: "{{ azure_ansible_security_group_name }}"
     rules:
       - name: AllowTomcat
