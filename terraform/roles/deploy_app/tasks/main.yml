@@ -12,5 +12,5 @@
 
 - name: restart nodejs
   systemd:
-    name: node
+    name: tomcat
     state: restarted
