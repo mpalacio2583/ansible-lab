@@ -4,7 +4,7 @@
     name: "{{ vm_hostname }}"
     inventory: "{{ tower_inventory_name }}"
     state: present
+    enabled: true
     tower_verify_ssl: no
-    variables: |+
-      ---
+    variables:
       ansible_host: "{{ vm_ip }}"
