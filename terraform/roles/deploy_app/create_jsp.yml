@@ -1,6 +1,7 @@
 ---
 - name: Deploy Tomcat webapp
-  hosts: web
+#  hosts: web
+  hosts: "{{ vm_name }}"  
   tasks:
   - name: copy index.jsp to webapp directory
     copy:
