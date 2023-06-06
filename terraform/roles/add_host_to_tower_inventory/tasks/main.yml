@@ -15,6 +15,5 @@
     inventory: "{{ tower_inventory_name }}"
     state: present
     tower_verify_ssl: no
-    variables: |+
-      ---
+    variables:
       ansible_host: "{{ vm_ip }}"
