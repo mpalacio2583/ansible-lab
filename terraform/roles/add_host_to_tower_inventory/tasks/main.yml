@@ -1,6 +1,6 @@
 ---
 - name: Add an inventory source
-  inventory_source:
+  inventory:
     name: "{{ vm_hostname }}"
     inventory: "{{ tower_inventory_name }}"
     state: present
