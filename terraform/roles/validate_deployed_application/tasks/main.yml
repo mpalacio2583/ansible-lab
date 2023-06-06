@@ -1,7 +1,7 @@
 ---
 - name: Check that application is deployed and running as expected
   uri:
-    url: "http://{{ vm_ip }}:8080/helloworld/"
+    url: "http://{{ vm_ip }}:8080/nodejs/"
     return_content: yes
   register: _result
   until: _result.status == 200 and 'Hello World 123!' in _result.content
