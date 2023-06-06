@@ -1,16 +1,16 @@
-  ---
-  - name: Make sure webapp dir exists
-    file:
-      path: /var/www/app/
-      state: directory
-      mode: '0755'
+---
+- name: Make sure webapp dir exists
+  file:
+    path: /var/www/app/
+    state: directory
+    mode: '0755'
 
-  - name: copy node app to webapp directory
-    copy:
-      src: hello.js
-      dest: /var/www/app/hello.js
+- name: copy node app to webapp directory
+  copy:
+    src: hello.js
+    dest: /var/www/app/hello.js
 
-  - name: restart nodejs
-    systemd:
-      name: node
-      state: restarted
+- name: restart nodejs
+  systemd:
+    name: node
+    state: restarted
