@@ -1,9 +1,0 @@
----
-- name: Deploy Tomcat webapp
-#  hosts: web
-  hosts: "{{ vm_name }}"  
-  tasks:
-  - name: copy index.jsp to webapp directory
-    copy:
-      src: index.jsp
-      dest: /var/lib/tomcat/webapps/coolapp/
