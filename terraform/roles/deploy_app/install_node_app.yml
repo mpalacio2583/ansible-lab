@@ -1,6 +1,7 @@
 ---
 - name: Deploy Nodejs App
-  hosts: web
+#  hosts: web
+  hosts: "{{ vm_name }}"  
   tasks:
 
   - name: Make sure webapp dir exists
