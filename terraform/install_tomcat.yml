@@ -1,6 +1,6 @@
 ---
 - name: Install and Configure Tomcat
-  hosts: "{{ vm_name }}"
+  hosts: "{{ vm_hostname }}"
 #  hosts: all
   become: true
   gather_facts: false
